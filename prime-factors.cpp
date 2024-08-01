@@ -1,6 +1,6 @@
 vector<int> AllPrimeFactors(int n)
 {
-    // Code here
+
     vector<int> ans;
     for (int i = 2; i * i <= n; i++)
     {

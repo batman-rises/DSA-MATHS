@@ -1,12 +1,11 @@
 void print_divisors(int n)
 {
-    // Code here.
     int i;
     for (i = 1; i * i <= n; i++)
     {
         if (n % i == 0)
         {
-            cout << i << " ";
+            cout << i << " "; // print all divisor from 1 to sqrt(n)
         }
     }
 
@@ -14,7 +13,7 @@ void print_divisors(int n)
     {
         if (n % i == 0 && i != n / i)
         {
-            cout << n / i << " ";
+            cout << n / i << " "; // print all divisor from sqrt(n) to n
         }
     }
 }
